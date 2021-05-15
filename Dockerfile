@@ -18,6 +18,6 @@ COPY --from=builder /usr/src/app/build /usr/share/nginx/html
 
 COPY config/nginx.conf /etc/nginx/conf.d
 
-COPY scripts/entrypoint.sh /tmp
+COPY scripts/entrypoint.sh /
 
-CMD ["/tmp/entrypoint.sh"]
+CMD ["/entrypoint.sh"]
