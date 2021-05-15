@@ -10,3 +10,10 @@ enabled = true
 
   [analyzers.meta]
   plugins = ["react"]
+
+[[analyzers]]
+name = "docker"
+enabled = true
+
+  [analyzers.meta]
+  dockerfile_paths = ["Dockerfile"]
