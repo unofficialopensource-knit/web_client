@@ -1,13 +1,8 @@
 name: "CD"
 
-# on:
-#   push:
-#     branches: ["release"]
 on:
-  pull_request:
-    branches: [ "main" ]
   push:
-    branches: [ "main" ]
+    branches: ["release"]
 
 jobs:
   deploy:
