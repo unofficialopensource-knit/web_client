@@ -9,16 +9,13 @@ networks:
 
 services:
     web:
-        command: npm start
-        tty: true
         build:
             context: .
-            target: builder
         env_file:
             - .env
         networks:
             - api-gateway
         ports:
-            - 3000:3000
+            - 80:3000
         volumes:
             - .:/usr/src/app
