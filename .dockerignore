@@ -3,6 +3,7 @@
 node_modules/
 
 *ignore
+.env*
 *.md
 *.toml
 *.yml
