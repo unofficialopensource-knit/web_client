@@ -8,4 +8,12 @@ RUN npm install
 
 COPY . .
 
-CMD ["npm build"]
+RUN npm run build
+
+FROM nginx:1.19.10-alpine
+
+COPY --from=builder /usr/src/app/build /usr/share/nginx/html
+
+COPY config/nginx.conf /etc/nginx/conf.d
+
+CMD ["nginx", "-g", "daemon off;"]
