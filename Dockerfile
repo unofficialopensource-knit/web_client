@@ -6,7 +6,9 @@ COPY package*.json ./
 
 RUN npm install
 
-COPY . .
+COPY src src
+
+COPY public public
 
 RUN npm run build
 
@@ -16,4 +18,6 @@ COPY --from=builder /usr/src/app/build /usr/share/nginx/html
 
 COPY config/nginx.conf /etc/nginx/conf.d
 
-CMD ["nginx", "-g", "daemon off;"]
+COPY scripts/entrypoint.sh /tmp
+
+CMD ["/tmp/entrypoint.sh"]
