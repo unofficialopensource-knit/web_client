@@ -1,10 +1,11 @@
 version: "3.8"
 
 
-# networks:
-#     api-gateway:
-#         external: true
-#         name: api_gateway_api-gateway
+networks:
+    api-gateway:
+        external: true
+        name: api_gateway_api-gateway
+
 
 services:
     web:
@@ -12,8 +13,8 @@ services:
         tty: true
         build:
             context: .
-        # networks:
-        #     - api-gateway
+        networks:
+            - api-gateway
         ports:
             - 3000:3000
         volumes:
