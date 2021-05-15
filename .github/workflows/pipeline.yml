@@ -35,7 +35,7 @@ jobs:
         id: meta
         uses: crazy-max/ghaction-docker-meta@v2
         with:
-          images: onlinejudge95/api_gateway
+          images: onlinejudge95/web_client
           tags: type=sha
 
       - name: "Build and push the Docker image"
