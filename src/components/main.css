@@ -1,0 +1,13 @@
+.main{
+   
+    margin-top: 10vh;
+}
+
+
+.main-images{
+    width:80%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
