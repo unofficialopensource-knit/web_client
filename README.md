@@ -5,7 +5,6 @@ web_client
 [![DeepSource](https://deepsource.io/gh/unofficialopensource-knit/web_client.svg/?label=active+issues&show_trend=true)](https://deepsource.io/gh/unofficialopensource-knit/web_client/?ref=repository-badge)
 ![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/onlinejudge95/web_client?sort=date)
 [![CodeFactor](https://www.codefactor.io/repository/github/unofficialopensource-knit/web_client/badge)](https://www.codefactor.io/repository/github/unofficialopensource-knit/web_client)
-![Discord](https://img.shields.io/discord/842708839791067166)
 
 ### Setup
 1. Build the docker images using `docker-compose build --compress`
