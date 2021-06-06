@@ -1,7 +1,7 @@
 web_client
 ==========
 
-[![CI](https://github.com/unofficialopensource-knit/web_client/actions/workflows/pipeline.yml/badge.svg)](https://github.com/unofficialopensource-knit/web_client/actions/workflows/pipeline.yml)
+[![PIpeline](https://github.com/unofficialopensource-knit/web_client/actions/workflows/pipeline.yml/badge.svg)](https://github.com/unofficialopensource-knit/web_client/actions/workflows/pipeline.yml)
 [![DeepSource](https://deepsource.io/gh/unofficialopensource-knit/web_client.svg/?label=active+issues&show_trend=true)](https://deepsource.io/gh/unofficialopensource-knit/web_client/?ref=repository-badge)
 ![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/onlinejudge95/web_client?sort=date)
 [![CodeFactor](https://www.codefactor.io/repository/github/unofficialopensource-knit/web_client/badge)](https://www.codefactor.io/repository/github/unofficialopensource-knit/web_client)
