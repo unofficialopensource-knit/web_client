@@ -1,24 +1,22 @@
-version: "3.8"
-
+version: '3.8'
 
 networks:
-    api-gateway:
-        external: true
-        name: api_gateway_api-gateway
-
+  api-gateway:
+    external: true
+    name: api_gateway_api-gateway
 
 services:
-    web:
-        command: npm start
-        tty: true
-        build:
-            context: .
-            target: builder
-        env_file:
-            - .env
-        networks:
-            - api-gateway
-        ports:
-            - 3000:3000
-        volumes:
-            - .:/usr/src/app
+  web:
+    command: npm start
+    tty: true
+    build:
+      context: .
+      target: builder
+    env_file:
+      - .env
+    networks:
+      - api-gateway
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/usr/src/app
