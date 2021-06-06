@@ -16,7 +16,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint --config config/.eslintrc.yml --ignore-path config/.eslintignore ."
+    "lint": "eslint --config config/.eslintrc.yml --ignore-path config/.eslintignore .",
+    "format": "prettier --check --config config/.prettierrc.yml --ignore-path config/.prettierignore ."
   },
   "browserslist": {
     "production": [
