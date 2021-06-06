@@ -5,10 +5,7 @@ import store from './store/store'
 function App() {
   return (
     <Provider store={store}>
-      <div className="App">
-      
-     
-    </div>
+      <div className="App"> </div>
     </Provider>
     
   );
