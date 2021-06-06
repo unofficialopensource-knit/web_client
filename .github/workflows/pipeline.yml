@@ -2,9 +2,12 @@ name: "Pipeline"
 
 on:
   pull_request:
-    branches: [ "main" ]
+    branches:
+      - main
+      - release
   push:
-    branches: [ "main" ]
+    branches:
+      - release
 
 jobs:
   test:
@@ -85,7 +88,7 @@ jobs:
           mv /tmp/.buildx-cache-new /tmp/.buildx-cache
 
   deploy:
-    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/release' }}
     runs-on: "ubuntu-latest"
     steps:
       - uses: actions/checkout@v2
