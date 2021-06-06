@@ -1,9 +1,6 @@
 import {ACTION} from '../actions/actiontypes';
 
-const initialState={
-    count=0
-
-}
+const initialState={ count:0}
 
 const reducer=(state={initialState},action)=>{
 
