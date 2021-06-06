@@ -1,6 +1,7 @@
-import action from '../actions/actiontypes';
+import {ACTION} from '../actions/actiontypes';
 
 const initialState={
+    count=0
 
 }
 
@@ -8,7 +9,7 @@ const reducer=(state={initialState},action)=>{
 
     switch(action.type){
 
-        case "action": return state;
+        case ACTION: return state;
        
         default: return state;
     }
