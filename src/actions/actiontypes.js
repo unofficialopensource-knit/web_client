@@ -1,1 +1,1 @@
-export const ACTION="action";
+export const ACTION = 'action';

@@ -1,7 +1,5 @@
-import {ACTION} from './actiontypes'
+import { ACTION } from './actiontypes';
 
-export const action= ()=>{
-    return {
-        type: ACTION
-    }
-}
+export const action = () => ({
+  type: ACTION,
+});
