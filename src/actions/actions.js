@@ -1,7 +1,11 @@
-import ACTION from './actiontypes';
+import * as actionTypes from './actiontypes';
+
+
 
 export const action = () => ({
-  type: ACTION,
+  type:actionTypes.ACTION,
 });
 
-export const FIXME = 'Remove this line after you add one more actiontype';
+export const FIXME =  () => ({
+  type: actionTypes.FIXME,
+});
