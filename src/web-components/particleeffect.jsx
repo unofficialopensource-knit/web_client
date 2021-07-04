@@ -4,7 +4,7 @@ import Particles from 'react-particles-js'
 import React from 'react';
 
 const particleeffect = ({height,val}) => (
-	<>
+	
        	
         <Particles
           params={{
@@ -27,7 +27,7 @@ const particleeffect = ({height,val}) => (
 	}}
 	height={height}
  />
-</>
+
 
     );
 
