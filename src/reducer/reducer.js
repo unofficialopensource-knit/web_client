@@ -1,11 +1,13 @@
-import { ACTION } from '../actions/actiontypes';
+import * as actionTypes from '../actions/actiontypes';
 
 const initialState = { count: 0 };
 
-const reducer = (action, state = { initialState }) => {
+const reducer = (state = { initialState }, action) => {
   switch (action.type) {
-    case ACTION:
+    case actionTypes.ACTION:
       return state;
+    case actionTypes.FIXME:
+      return state + 1;
 
     default:
       return state;
