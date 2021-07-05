@@ -1,11 +1,9 @@
 import * as actionTypes from './actiontypes';
 
-
-
 export const action = () => ({
-  type:actionTypes.ACTION,
+  type: actionTypes.ACTION,
 });
 
-export const FIXME =  () => ({
+export const FIXME = () => ({
   type: actionTypes.FIXME,
 });
